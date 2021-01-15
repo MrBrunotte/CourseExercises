@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP
 {
@@ -8,11 +9,52 @@ namespace OOP
         {
             Inheritance();
 
+            var demo = new Demo(new ConsoleUI());
+
             var fuelVehicle = new FuelVehicle("ABC123", 50);
             //Will set the level to 0 which is the min value in the setter!!
-            fuelVehicle.FeulLevel = -3;
-            var level = fuelVehicle.FeulLevel;
+            fuelVehicle.FuelLevel = -3;
+            var level = fuelVehicle.FuelLevel;
             Console.WriteLine($"The fuel level is always a min of 0. => Level when -3 is set: {level}");
+
+            List<IDrive> vehicles = new List<IDrive>
+            {
+                new FuelVehicle("ABS", 50),
+                new FuelVehicle("ABD", 50),
+                new FuelCar("CFD", 20),
+                new Bicycle("12356")
+            };
+
+            foreach (IDrive vehicle in vehicles)
+            {
+                Console.WriteLine(vehicle.Drive(20));
+
+                FuelCar fuelCar1 = vehicle as FuelCar;
+
+                // ? nullcheck!
+                Console.WriteLine("Tut tut: ? print with null check");
+                Console.WriteLine(fuelCar1?.DoSound());
+
+                if (fuelCar1 != null)
+                {
+                    Console.WriteLine("Tut tut: Print with if condition");
+                    Console.WriteLine(fuelCar1.DoSound());
+                }
+
+                if (vehicle is FuelCar)
+                {
+                    FuelCar fuelCar = (FuelCar)vehicle;
+                    Console.WriteLine("Tut tut with if condition: is");
+                    Console.WriteLine(fuelCar.DoSound());
+
+                }
+
+                if (vehicle is FuelCar car)
+                {
+                    Console.WriteLine("Tut tut: with Direct cast");
+                    Console.WriteLine(car.DoSound());
+                }
+            }
         }
 
         private static void Inheritance()
