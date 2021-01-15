@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övn1PersonalRegister", "Övn1PersonalRegister\Övn1PersonalRegister.csproj", "{DA8746FE-DC1F-444F-B44C-2C853FBCC2A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRegisterÖvning1", "PRegister\PRegisterÖvning1.csproj", "{4A7E3021-ED25-44EC-96F9-6BC7A58F6B88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{950C73CA-ECA3-4220-B600-C335DC3E26CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA8746FE-DC1F-444F-B44C-2C853FBCC2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA8746FE-DC1F-444F-B44C-2C853FBCC2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA8746FE-DC1F-444F-B44C-2C853FBCC2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA8746FE-DC1F-444F-B44C-2C853FBCC2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7E3021-ED25-44EC-96F9-6BC7A58F6B88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7E3021-ED25-44EC-96F9-6BC7A58F6B88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7E3021-ED25-44EC-96F9-6BC7A58F6B88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7E3021-ED25-44EC-96F9-6BC7A58F6B88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950C73CA-ECA3-4220-B600-C335DC3E26CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950C73CA-ECA3-4220-B600-C335DC3E26CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950C73CA-ECA3-4220-B600-C335DC3E26CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950C73CA-ECA3-4220-B600-C335DC3E26CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
